@@ -14,6 +14,11 @@
   font-family: 'Nunito Sans', 'sans-serif';
 }
 
+
+.invisible {
+  opacity: 0;
+}
+
 .gridParent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
