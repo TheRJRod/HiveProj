@@ -179,7 +179,7 @@
     servicePicture.style.opacity = '0'
     serviceButton.style.opacity = '0'
     animation.goToAndPlay(0, true)
-    setTimeout(() => {
+    
       serviceDescription.textContent = services[counter].description
       servicePicture.src = services[counter].image
       serviceButton.textContent = services[counter].buttonText
@@ -188,9 +188,9 @@
       servicePicture.style.opacity = '100%'
       serviceButton.style.opacity = '100%'
     
-      }, 100)
+      }, 1500)
       
-    }, 1600)
+    
   })
 
   </script>
