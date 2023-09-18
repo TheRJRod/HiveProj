@@ -7,77 +7,66 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-    extend: {
-      colors: {
-        'HiveYellow': '#FFC400',
-        'HiveBlack' : '#1F2830'
-      }
-    },
-  }
-    }
-  </script>
+  
+  
 </head>
-<body class="flex justify-center items-center h-screen">
+<body >
   <!-- Outer Container Div -->
-  <div class="flex justify-center items-center bg-HiveYellow w-3/4   rounded-lg overflow-hidden">
+  <div class="outerContainer ">
 
     <!-- Inner Container Div -->
 
-    <div class="flex flex-col gap-y-4  gap-x-4 justify-center items-center p-6 lg:flex-row lg:items-stretch">
+    <div class="innerContainer">
 
     <!-- Left Section -->
-    <div id="gridParent" class="w-full lg:w-1/3 gridParent gap-y-4">
+    <div id="gridParent" class="gridParent">
 
       <!-- Grid 1 -->
-      <div id="grid1" class="border border-black h-28 lg:h-40 rounded-lg flex flex-col gap-y-2 p-2 grid1 bg-HiveBlack text-white relative cursor-pointer overflow-hidden transition-all duration-500	">
-        <p id="label1" class="text-md lg:text-xs xl:text-base  HivePrimary label1">Lead<br/> Generation</p>
+      <div id="grid1" class="grid1  gridLong	">
+        <p id="label1" class=" gridLabel HivePrimary label1">Lead<br/> Generation</p>
 
-        <svg id="arrow1" class="arrow1 transition-all" width="70" height="24" viewBox="0 0 70 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg id="arrow1" class="arrow1 arrows" width="70" height="24" viewBox="0 0 70 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path id="path1" class="path1" d="M69.0607 13.0607C69.6464 12.4749 69.6464 11.5251 69.0607 10.9393L59.5147 1.3934C58.9289 0.807611 57.9792 0.807611 57.3934 1.3934C56.8076 1.97919 56.8076 2.92893 57.3934 3.51472L65.8787 12L57.3934 20.4853C56.8076 21.0711 56.8076 22.0208 57.3934 22.6066C57.9792 23.1924 58.9289 23.1924 59.5147 22.6066L69.0607 13.0607ZM0 13.5H68V10.5H0V13.5Z" fill="white"/>
           </svg>
 
-          <img class="absolute w-1/3 bottom-0 right-0 transition-all duration-500	 buzzy1 " src="./media/buzzy.png" alt="buzzy">
+          <img class="buzzy1 " src="./media/buzzy.png" alt="buzzy">
           <!-- Grid 1 end -->
       </div>
 
       <!-- Grid 2 -->
-      <div id="grid2" class="border border-black h-28 lg:h-52 rounded-lg flex flex-col gap-y-2 p-2 grid2 relative cursor-pointer overflow-hidden transition-all duration-500	">
-        <p id="label2" class="text-md lg:text-xs xl:text-base HivePrimary label2">Account Based <br/> Marketing</p>
+      <div id="grid2" class="gridShort grid2 	">
+        <p id="label2" class="gridLabel HivePrimary label2">Account Based <br/> Marketing</p>
 
-        <svg id="arrow2" class="arrow2 transition-all" width="70" height="24" viewBox="0 0 70 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg id="arrow2" class="arrow2 arrows" width="70" height="24" viewBox="0 0 70 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path id="path2" class="path2" d="M69.0607 13.0607C69.6464 12.4749 69.6464 11.5251 69.0607 10.9393L59.5147 1.3934C58.9289 0.807611 57.9792 0.807611 57.3934 1.3934C56.8076 1.97919 56.8076 2.92893 57.3934 3.51472L65.8787 12L57.3934 20.4853C56.8076 21.0711 56.8076 22.0208 57.3934 22.6066C57.9792 23.1924 58.9289 23.1924 59.5147 22.6066L69.0607 13.0607ZM0 13.5H68V10.5H0V13.5Z" fill="black"/>
           </svg>
 
-          <img class="absolute w-1/3 lg:w-1/2 bottom-0 right-0 translate-y-24 transition-all duration-500 invisible	 buzzy2" src="./media/Buzzy4.png" alt="buzzy">
+          <img class=" invisible buzzy2" src="./media/Buzzy4.png" alt="buzzy">
 
           <!-- Grid 2 end -->
       </div>
 
       <!-- Grid 3 -->
-      <div id="grid3" class="border border-black h-28 lg:h-52 rounded-lg flex flex-col gap-y-2 p-2 grid3 relative cursor-pointer overflow-hidden transition-all duration-500">
-        <p id="label3" class="text-md lg:text-xs xl:text-base HivePrimary label3 ">HubSpot<br/> Implementation</p>
+      <div id="grid3" class="grid3 gridShort">
+        <p id="label3" class=" gridLabel HivePrimary label3 ">HubSpot<br/> Implementation</p>
 
-        <svg id="arrow3" class="arrow3 transition-all" width="70" height="24" viewBox="0 0 70 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg id="arrow3" class="arrow3 arrows" width="70" height="24" viewBox="0 0 70 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path id="path3" class="path3" d="M69.0607 13.0607C69.6464 12.4749 69.6464 11.5251 69.0607 10.9393L59.5147 1.3934C58.9289 0.807611 57.9792 0.807611 57.3934 1.3934C56.8076 1.97919 56.8076 2.92893 57.3934 3.51472L65.8787 12L57.3934 20.4853C56.8076 21.0711 56.8076 22.0208 57.3934 22.6066C57.9792 23.1924 58.9289 23.1924 59.5147 22.6066L69.0607 13.0607ZM0 13.5H68V10.5H0V13.5Z" fill="black"/>
           </svg>
 
-          <img class="absolute w-1/3 lg:w-1/2 bottom-0 right-0 transition-all duration-500 translate-y-24 invisible buzzy3" src="./media/Buzzy3.png" alt="buzzy">
+          <img class="invisible buzzy3" src="./media/Buzzy3.png" alt="buzzy">
         
           <!-- Grid 3 end -->
       </div>
 
       <!-- Grid 4 -->
-      <div id="grid4" class="border border-black h-28 lg:h-40 rounded-lg overflow-hidden flex flex-col gap-y-2 p-2 grid4 relative cursor-pointer transition-all duration-500">
-        <p id="label4" class="text-md lg:text-xs xl:text-base HivePrimary label4">Website <br/> Development</p>
-        <svg id="arrow4" class="arrow4 transition-all" width="70" height="24" viewBox="0 0 70 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div id="grid4" class="grid4 gridLong">
+        <p id="label4" class=" gridLabel HivePrimary label4">Website <br/> Development</p>
+        <svg id="arrow4" class="arrow4 arrows" width="70" height="24" viewBox="0 0 70 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path id="path4" class="path4" d="M69.0607 13.0607C69.6464 12.4749 69.6464 11.5251 69.0607 10.9393L59.5147 1.3934C58.9289 0.807611 57.9792 0.807611 57.3934 1.3934C56.8076 1.97919 56.8076 2.92893 57.3934 3.51472L65.8787 12L57.3934 20.4853C56.8076 21.0711 56.8076 22.0208 57.3934 22.6066C57.9792 23.1924 58.9289 23.1924 59.5147 22.6066L69.0607 13.0607ZM0 13.5H68V10.5H0V13.5Z" fill="black"/>
           </svg>
 
-          <img class="absolute w-1/3 bottom-0 right-0 translate-y-40 transition-all duration-500 invisible buzzy4" src="./media/Buzzy2.png" alt="buzzy">
+          <img class="invisible buzzy4" src="./media/Buzzy2.png" alt="buzzy">
 
           <!-- Grid 4 end -->
       </div>
@@ -86,10 +75,10 @@
     <!-- Left Section End -->
 
     <!-- Right Section -->
-    <div id="rightContainer" class="flex flex-col bg-white justify-around items-center p-4 xl:p-6 rounded-lg w-full lg:w-2/3 gap-4  relative">
-      <p id="serviceDescription" class="text-center HiveSecondary transition-all z-10">Generate leads for your business through strategic inbound marketing, account based marketing, and digital advertising campaigns.</p>
-      <img id="servicePicture" class=" w-3/4 rounded-lg z-10 object-contain	" src="./media/Stock1.jpg" alt="explainer">
-      <button id="serviceButton" class="bg-HiveYellow rounded-xl py-4 px-10 z-10 HivePrimarySemi ">LEAD GENERATION</button>
+    <div id="rightContainer" class="rightContain">
+      <p id="serviceDescription" class="rightContent HiveSecondary">Generate leads for your business through strategic inbound marketing, account based marketing, and digital advertising campaigns.</p>
+      <img id="servicePicture" class=" rightPicture" src="./media/Stock1.jpg" alt="explainer">
+      <button id="serviceButton" class=" HivePrimarySemi ">LEAD GENERATION</button>
       <div id="lottieContainer"></div>
     </div>
 
@@ -138,8 +127,8 @@
   const serviceDescription = document.getElementById('serviceDescription')
   const servicePicture = document.getElementById('servicePicture')
   const serviceButton = document.getElementById('serviceButton')
-
-  document.getElementById('gridParent').addEventListener('click', (e) => {
+  const gridParent = document.getElementById('gridParent')
+  gridParent.addEventListener('click', (e) => {
       let counter = 0;
       const Grid1ID = document.getElementById('grid1')
       const Label1ID = document.getElementById('label1')
@@ -165,12 +154,18 @@
 
       if(e.target === Grid1ID || e.target === Label1ID || e.target === Path1ID || e.target === Arrow1ID ) {
         counter = 0
+        animation.goToAndPlay(0, true)
       } else if(e.target === Grid2ID || e.target === Label2ID || e.target === Path2ID || e.target === Arrow2ID) {
         counter = 1
+        animation.goToAndPlay(0, true)
       } else if(e.target === Grid3ID || e.target === Label3ID || e.target === Path3ID || e.target === Arrow3ID) {
         counter = 2
+        animation.goToAndPlay(0, true)
       } else if(e.target === Grid4ID || e.target === Label4ID || e.target === Path4ID || e.target === Arrow4ID) {
         counter = 3
+        animation.goToAndPlay(0, true)
+      } else {
+        return console.log('nothing clicked');
       }
 
       console.log(counter);
@@ -178,7 +173,7 @@
     serviceDescription.style.opacity = '0'
     servicePicture.style.opacity = '0'
     serviceButton.style.opacity = '0'
-    animation.goToAndPlay(0, true)
+    
     
       serviceDescription.textContent = services[counter].description
       servicePicture.src = services[counter].image

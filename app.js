@@ -40,30 +40,26 @@ const handleHoverOff = (arrow) => {
 
 
 const handleClick = (e) => {
-  console.log(e.target.nextElementSibling);
+  console.log(e.target);
   if(e.target === Grid1 || e.target === Path1 || e.target === Label1 || e.target === Arrow1) {
     Grid1.style.backgroundColor = '#1F2830'
     Grid1.style.color = 'white'
     Path1.setAttribute('style','fill:white')
-    Buzzy1.style.transform = 'translateY(0)'
     Buzzy1.classList.remove('invisible')
 
     Grid2.style.backgroundColor = 'transparent'
     Grid2.style.color = 'black'
     Path2.setAttribute('style','fill:black')
-    Buzzy2.style.transform = 'translateY(12rem)'
     Buzzy2.classList.add('invisible')
 
     Grid3.style.backgroundColor = 'transparent'
     Grid3.style.color = 'black'
     Path3.setAttribute('style','fill:black')
-    Buzzy3.style.transform = 'translateY(12rem)'
     Buzzy3.classList.add('invisible')
 
     Grid4.style.backgroundColor = 'transparent'
     Grid4.style.color = 'black'
     Path4.setAttribute('style','fill:black')
-    Buzzy4.style.transform = 'translateY(12rem)'
     Buzzy4.classList.add('invisible')
 
   }
@@ -71,25 +67,21 @@ const handleClick = (e) => {
     Grid2.style.backgroundColor = '#1F2830'
     Grid2.style.color = 'white'
     Path2.setAttribute('style','fill:white')
-    Buzzy2.style.transform = 'translateY(0)'
     Buzzy2.classList.remove('invisible')
 
     Grid1.style.backgroundColor = 'transparent'
     Grid1.style.color = 'black'
     Path1.setAttribute('style','fill:black')
-    Buzzy1.style.transform = 'translateY(12rem)'
     Buzzy1.classList.add('invisible')
 
     Grid3.style.backgroundColor = 'transparent'
     Grid3.style.color = 'black'
     Path3.setAttribute('style','fill:black')
-    Buzzy3.style.transform = 'translateY(12rem)'
     Buzzy3.classList.add('invisible')
 
     Grid4.style.backgroundColor = 'transparent'
     Grid4.style.color = 'black'
     Path4.setAttribute('style','fill:black')
-    Buzzy4.style.transform = 'translateY(12rem)'
     Buzzy4.classList.add('invisible')
   }
 
@@ -97,51 +89,45 @@ const handleClick = (e) => {
     Grid3.style.backgroundColor = '#1F2830'
     Grid3.style.color = 'white'
     Path3.setAttribute('style','fill:white')
-    Buzzy3.style.transform = 'translateY(0)'
     Buzzy3.classList.remove('invisible')
 
     Grid1.style.backgroundColor = 'transparent'
     Grid1.style.color = 'black'
     Path1.setAttribute('style','fill:black')
-    Buzzy1.style.transform = 'translateY(12rem)'
     Buzzy1.classList.add('invisible')
 
     Grid2.style.backgroundColor = 'transparent'
     Grid2.style.color = 'black'
     Path2.setAttribute('style','fill:black')
-    Buzzy2.style.transform = 'translateY(12rem)'
     Buzzy2.classList.add('invisible')
 
     Grid4.style.backgroundColor = 'transparent'
     Grid4.style.color = 'black'
     Path4.setAttribute('style','fill:black')
-    Buzzy4.style.transform = 'translateY(12rem)'
     Buzzy4.classList.add('invisible')
   }
   else if(e.target === Grid4 || e.target === Path4 || e.target === Label4 || e.target === Arrow4) {
     Grid4.style.backgroundColor = '#1F2830'
     Grid4.style.color = 'white'
     Path4.setAttribute('style','fill:white')
-    Buzzy4.style.transform = 'translateY(0)'
     Buzzy4.classList.remove('invisible')
 
     Grid1.style.backgroundColor = 'transparent'
     Grid1.style.color = 'black'
     Path1.setAttribute('style','fill:black')
-    Buzzy1.style.transform = 'translateY(12rem)'
     Buzzy1.classList.add('invisible')
 
     Grid2.style.backgroundColor = 'transparent'
     Grid2.style.color = 'black'
     Path2.setAttribute('style','fill:black')
-    Buzzy2.style.transform = 'translateY(12rem)'
     Buzzy2.classList.add('invisible')
 
     Grid3.style.backgroundColor = 'transparent'
     Grid3.style.color = 'black'
     Path3.setAttribute('style','fill:black')
-    Buzzy3.style.transform = 'translateY(12rem)'
     Buzzy3.classList.add('invisible')
+  } else {
+    console.log('nothing clicked');
   }
 }
 
