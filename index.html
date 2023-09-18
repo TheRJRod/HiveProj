@@ -174,10 +174,12 @@
     servicePicture.style.opacity = '0'
     serviceButton.style.opacity = '0'
     
-    
+    setTimeout(() => {
       serviceDescription.textContent = services[counter].description
       servicePicture.src = services[counter].image
       serviceButton.textContent = services[counter].buttonText
+    },200)
+      
       setTimeout(() => {
         serviceDescription.style.opacity = '100%'
       servicePicture.style.opacity = '100%'
